@@ -1,0 +1,605 @@
+body {
+    background-color: black;
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column; */
+}
+
+#banner {
+    width: 100%;
+    height: 15vh;
+    /* border: 2px black solid; */
+    /* background-image: url(./PersevereCasinoBanner2.png);
+    background-repeat: no-repeat;
+    background-size: contain; */
+
+    /* display: flex; */
+    /* justify-content: center; */
+
+    margin-top: 5px;
+    font-size: 60px;
+    color: aqua;
+    text-align: center;
+    animation: glow .5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #000, 0 0 40px #000, 0 0 50px #000, 0 0 60px #000, 0 0 70px #000;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 50px aqua, 0 0 60px aqua, 0 0 70px #ff0000, 0 0 80px #ff0000;
+    }
+}
+
+@keyframes glow2 {
+    from {
+        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #000, 0 0 40px #000;
+    }
+
+    to {
+        box-shadow: 0 0 20px #fff, 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 50px aqua;
+    }
+}
+
+#outerRing {
+    border: 6px aqua solid;
+    border-radius: 10px;
+    height: 66vh;
+    width: 99%;
+    /* animation: mymove 10s infinite; */
+    animation: flash1 5s infinite, glow2 .5s ease-in-out infinite;
+    z-index: 10;
+}
+
+@keyframes flash1 {
+    0% {
+        border-color: aqua;
+    }
+
+    25% {
+        border-color: white;
+    }
+
+    50% {
+        border-color: aqua;
+    }
+
+    75% {
+        border-color: white;
+    }
+}
+
+@keyframes mymove {
+    0% {
+        background-color: black;
+        border-color: rgb(255, 0, 0);
+    }
+
+    5% {
+        background-color: black;
+        border-color: rgb(255, 42, 0);
+    }
+
+    10% {
+        background-color: black;
+        border-color: rgb(255, 94, 0);
+    }
+
+    15% {
+        background-color: black;
+        border-color: rgb(255, 145, 0);
+    }
+
+    20% {
+        background-color: black;
+        border-color: rgb(255, 204, 0);
+    }
+
+    25% {
+        background-color: black;
+        border-color: rgb(179, 255, 0);
+    }
+
+    30% {
+        background-color: black;
+        border-color: rgb(102, 255, 0);
+    }
+
+    35% {
+        background-color: black;
+        border-color: rgb(30, 255, 0);
+    }
+
+    40% {
+        background-color: black;
+        border-color: rgb(0, 255, 123);
+    }
+
+    45% {
+        background-color: black;
+        border-color: rgb(0, 247, 255);
+    }
+
+    50% {
+        background-color: black;
+        border-color: rgb(0, 85, 255);
+    }
+
+    55% {
+        background-color: black;
+        border-color: rgb(0, 38, 255);
+    }
+
+    60% {
+        background-color: black;
+        border-color: rgb(72, 0, 255);
+    }
+
+    65% {
+        background-color: black;
+        border-color: rgb(93, 0, 255);
+    }
+
+    70% {
+        background-color: black;
+        border-color: rgb(255, 0, 187);
+    }
+
+    75% {
+        background-color: black;
+        border-color: rgb(255, 0, 140);
+    }
+
+    80% {
+        background-color: black;
+        border-color: rgb(255, 0, 38);
+    }
+
+    85% {
+        background-color: black;
+        border-color: rgb(255, 0, 0);
+    }
+
+    100% {
+        background-color: black;
+        border-color: rgb(255, 0, 0);
+
+    }
+}
+
+#topRingLights {
+    width: 100%;
+    height: 20px;
+    /* border: 2px blue solid; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#bottomRingLights {
+    width: 100%;
+    height: 20px;
+    /* border: 2px blue solid; */
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1px;
+}
+
+.tLight1 {
+    height: 80%;
+    width: 10%;
+    /* border: 2px red solid; */
+    border: 2px aqua solid;
+    /* animation: mymove 7s infinite; */
+    border-radius: 50%;
+    background-color: white;
+    animation: flash1 5s infinite, glow2 .4s ease-in-out infinite;
+}
+
+.tLight2 {
+    height: 80%;
+    width: 10%;
+    border: 2px rgb(255, 255, 255) solid;
+    background-color: aqua;
+    /* animation: MyMoveButton 3s infinite; */
+
+}
+
+/* #bottomRingLights {
+    width: 100%;
+    height: 20px;
+    border: 2px blue solid;
+} */
+
+#innerRing {
+    border: 4px aqua solid;
+    height: 86%;
+    width: 90%;
+    margin: auto;
+    /* animation: mymoveReverse 10s infinite; */
+    animation: flash1 10s infinite, glow2 1s ease-in-out infinite;
+    /* animation: glow2 2s ease-in-out infinite */
+
+
+
+}
+
+#firstRow {
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 2px purple solid; */
+    width: 100%;
+    height: 33%;
+    color: white;
+    text-align: center;
+    align-items: center;
+    font-size: 250%;
+}
+
+.rowOdds {
+    border: 2px green solid;
+    height: 100%;
+    width: 10%;
+    text-align: center;
+    align-items: center;
+}
+
+.rowEvens {
+    border: 2px blue solid;
+    height: 100%;
+    width: 10%;
+    text-align: center;
+    align-items: center;
+}
+
+#secondRow {
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 2px orange solid; */
+    width: 100%;
+    height: 33%;
+    color: white;
+    text-align: center;
+    align-items: center;
+    font-size: 250%;
+}
+
+#thirdRow {
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 2px green solid; */
+    width: 100%;
+    height: 33%;
+    color: white;
+    text-align: center;
+    align-items: center;
+    font-size: 250%;
+}
+
+#gameController {
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-evenly; */
+    /* padding-top: 3px; */
+    flex: 1;
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+
+/* #betAmounts {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+} */
+
+#Amount {
+    display: flex;
+    border: 2px aqua solid;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    text-align: right;
+    align-items: center;
+    align-content: center;
+    font-size: 40px;
+    padding-left: 20px;
+    animation: glow 1s ease-in-out infinite;
+    color: black;
+    /* animation: mymoveReverse 6s ease-in-out infinite; */
+    /* transition: width 2s; */
+}
+
+/* #Amount:hover {
+  height: 600px;
+  width: 200px;
+} */
+
+
+
+#betDiv {
+    display: flex;
+    width: 200px;
+    /* border: 2px yellow solid; */
+}
+
+#betArea {
+    border: 2px aqua solid;
+    width: 200px;
+    text-align: center;
+
+}
+
+#downBet {
+    width: 40px;
+    font-size: 40px;
+    /* animation: MyMoveButton 3s infinite; */
+}
+
+
+
+#upBet {
+    width: 30px;
+    font-size: 25px;
+    /* animation: MyMoveButton 3s infinite; */
+
+}
+
+@keyframes MyMoveButton {
+    100% {
+        background-color: rgb(255, 0, 0);
+
+    }
+
+    95% {
+        background-color: rgb(255, 42, 0);
+    }
+
+    90% {
+        background-color: rgb(255, 94, 0);
+    }
+
+    85% {
+        background-color: rgb(255, 145, 0);
+    }
+
+    80% {
+        background-color: rgb(255, 204, 0);
+    }
+
+    75% {
+        background-color: rgb(179, 255, 0);
+    }
+
+    70% {
+        background-color: rgb(102, 255, 0);
+    }
+
+    65% {
+        background-color: rgb(30, 255, 0);
+    }
+
+    60% {
+        background-color: rgb(0, 255, 123);
+    }
+
+    55% {
+        background-color: rgb(0, 247, 255);
+    }
+
+    50% {
+        background-color: rgb(0, 85, 255);
+    }
+
+    45% {
+        background-color: rgb(0, 38, 255);
+    }
+
+    40% {
+        background-color: rgb(72, 0, 255);
+    }
+
+    35% {
+        background-color: rgb(93, 0, 255);
+    }
+
+    30% {
+        background-color: rgb(255, 0, 187);
+    }
+
+    25% {
+        background-color: rgb(255, 0, 140);
+    }
+
+    20% {
+        background-color: rgb(255, 0, 38);
+    }
+
+    15% {
+        background-color: rgb(255, 0, 0);
+    }
+
+    10% {
+        background-color: rgb(255, 0, 0)
+    }
+
+    5% {
+        background-color: rgb(255, 0, 0)
+    }
+
+    0% {
+        background-color: rgb(255, 0, 0)
+    }
+
+
+}
+
+
+#winningsArea {
+    height: 60px;
+    border: 4px white solid;
+    width: 200px;
+    text-align: center;
+    /* animation: mymoveReverse 8s ease-in-out infinite; */
+
+
+
+}
+
+#Spin {
+    border: 6px aqua solid;
+    width: 200px;
+    height: 70px;
+    border-radius: 50%;
+    font-size: 40px;
+    /* animation: mymoveReverse 8s ease-in-out infinite; */
+    /* animation: MyMoveButton 5s infinite; */
+    animation: glow .5s ease-in-out infinite alternate;
+
+}
+
+@keyframes mymoveReverse {
+    100% {
+        border-color: rgb(255, 0, 0);
+
+    }
+
+    95% {
+        border-color: rgb(255, 42, 0);
+    }
+
+    90% {
+        border-color: rgb(255, 94, 0);
+    }
+
+    85% {
+        border-color: rgb(255, 145, 0);
+    }
+
+    80% {
+        border-color: rgb(255, 204, 0);
+    }
+
+    75% {
+        border-color: rgb(179, 255, 0);
+    }
+
+    70% {
+        border-color: rgb(102, 255, 0);
+    }
+
+    65% {
+        border-color: rgb(30, 255, 0);
+    }
+
+    60% {
+        border-color: rgb(0, 255, 123);
+    }
+
+    55% {
+        border-color: rgb(0, 247, 255);
+    }
+
+    50% {
+        border-color: rgb(0, 85, 255);
+    }
+
+    45% {
+        border-color: rgb(0, 38, 255);
+    }
+
+    40% {
+        border-color: rgb(72, 0, 255);
+    }
+
+    35% {
+        border-color: rgb(93, 0, 255);
+    }
+
+    30% {
+        border-color: rgb(255, 0, 187);
+    }
+
+    25% {
+        border-color: rgb(255, 0, 140);
+    }
+
+    20% {
+        border-color: rgb(255, 0, 38);
+    }
+
+    15% {
+        border-color: rgb(255, 0, 0);
+    }
+
+    10% {
+        border-color: rgb(255, 0, 0)
+    }
+
+    5% {
+        border-color: rgb(255, 0, 0);
+    }
+
+    0% {
+        border-color: rgb(255, 0, 0)
+    }
+
+
+}
+
+
+
+
+@keyframes shake {
+    0% {
+        transform: translate(0px, 20px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(0px, -30px) rotate(0deg);
+    }
+
+    20% {
+        transform: translate(0, 10px) rotate(0deg);
+    }
+
+    30% {
+        transform: translate(0px, 30px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(0px, -20px) rotate(0deg);
+    }
+
+    50% {
+        transform: translate(0px, 30px) rotate(0deg);
+    }
+
+    60% {
+        transform: translate(0px, 20px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(0px, 20px) rotate(0deg);
+    }
+
+    80% {
+        transform: translate(0px, -20px) rotate(0deg);
+    }
+
+    90% {
+        transform: translate(0px, 30px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(0px, -30px) rotate(0deg);
+    }
+}
+

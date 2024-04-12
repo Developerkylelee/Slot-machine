@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persevere Casino-Slots</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="./app.js" defer></script>
+</head>
+
+<body>
+
+    <div id="banner">PERSEVERE CASINO</div>
+
+
+    <div id="outerRing">
+        <div id="topRingLights">
+            <div class="tLight1"></div>
+            <div class="tLight2"></div>
+            <div class="tLight1"></div>
+            <div class="tLight2"></div>
+            <div class="tLight1"></div>
+            <div class="tLight2"></div>
+            <div class="tLight1"></div>
+            <div class="tLight2"></div>
+            <div class="tLight1"></div>
+
+        </div>
+        <div id="innerRing">
+
+            <div id="firstRow">
+                <div class="row1" id="R1-1" name="row1"></div>
+                <div class="row1" id="R1-2" name="row1"></div>
+                <div class="row1" id="R1-3" name="row1"></div>
+                <div class="row1" id="R1-4" name="row1"></div>
+                <div class="row1" id="R1-5" name="row1"></div>
+            </div>
+
+            <div id="secondRow">
+                <div class="row2" id="R2-1"></div>
+                <div class="row2" id="R2-2"></div>
+                <div class="row2" id="R2-3"></div>
+                <div class="row2" id="R2-4"></div>
+                <div class="row2" id="R2-5"></div>
+            </div>
+
+            <div id="thirdRow">
+                <div class="row3" id="R3-1"></div>
+                <div class="row3" id="R3-2"></div>
+                <div class="row3" id="R3-3"></div>
+                <div class="row3" id="R3-4"></div>
+                <div class="row3" id="R3-5"></div>
+            </div>
+
+        </div>
+        <div id="bottomRingLights">
+            <div class="tLight1"></div>
+            <div class="tLight2"></div>
+            <div class="tLight1"></div>
+            <div class="tLight2"></div>
+            <div class="tLight1"></div>
+            <div class="tLight2"></div>
+            <div class="tLight1"></div>
+            <div class="tLight2"></div>
+            <div class="tLight1"></div>
+
+        </div>
+    </div>
+    <footer id="gameController">
+        <div id="betAmounts">
+            <div id="Amount">$5</div>
+
+        </div>
+        <div id="betDiv">
+            <button id="downBet" onclick="downBet()">-</button>
+            <div id="betArea">
+                <div id="betHeader"><strong>Total Bet</strong></div>
+                <hr>
+                <div id="betText"><strong>000</strong></div>
+            </div>
+            <button id="upBet" onclick="upBet()"><strong>+</strong></button>
+        </div>
+        <div id="winningsArea">
+            <div id="winningsHeader"><strong>Winnings</strong></div>
+            <hr>
+            <div id="winningsAmount"><strong>1000</strong></div>
+        </div>
+
+        <div id="spinButton"><button id="Spin" onclick="Spin()">SPIN</button></div>
+
+
+    </footer>
+
+</body>
+
+</html>
